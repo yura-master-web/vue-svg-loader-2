@@ -22,7 +22,7 @@ module.exports = function vueSvgLoader(svg) {
   let { svgo: svgoConfig } = this.getOptions() || {};
 
   // merge svgoConfig with defaultConfig in order to force inlining <style> tags
-  svgoConfig = {...svgoConfig, ...defaultConfig};
+  // svgoConfig = {...svgoConfig, ...defaultConfig};
 
   let optimized;
   optimized = optimize(svg, {
